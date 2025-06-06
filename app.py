@@ -3,7 +3,7 @@ import boto3
 import json
 import pandas as pd
 
-st.set_page_config(page_title="Simulador de Custos - Databricks na AWS", page_icon="📊")
+st.set_page_config(page_title="Simulador de Custos - Databricks na AWS", page_icon="💸")
 
 AWS_SECRET_ACCESS_KEY = st.secrets.get("aws_secret_access_key")
 AWS_ACCESS_KEY_ID = st.secrets.get("aws_access_key_id")
