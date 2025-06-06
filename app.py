@@ -8,8 +8,6 @@ st.set_page_config(page_title="Simulador de Custos - Databricks na AWS", page_ic
 AWS_SECRET_ACCESS_KEY = st.secrets.get("aws_secret_access_key")
 AWS_ACCESS_KEY_ID = st.secrets.get("aws_access_key_id")
 
-print("AWS_SECRET_ACCESS_KEY:", AWS_SECRET_ACCESS_KEY)
-print("AWS_ACCESS_KEY_ID:", AWS_ACCESS_KEY_ID)
 if not AWS_SECRET_ACCESS_KEY or not AWS_ACCESS_KEY_ID:
     st.error("⚠️ Configurações AWS não encontradas. Verifique suas credenciais no arquivo secrets.toml.")
     st.stop()
